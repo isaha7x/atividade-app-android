@@ -22,6 +22,7 @@
         android:textSize="30sp"
         app:layout_constraintTop_toBottomOf="@id/bt_01"
         android:layout_marginTop="20dp"
+        android:textColor="#3592c4"
         />
 
     <EditText
@@ -29,8 +30,8 @@
         android:layout_height="wrap_content"
         android:hint="Digite algo aqui"
         android:textSize="30sp"
-        android:id="@+id/tv_primeiro"
-        android:inputType="number"
+        android:id="@+id/et_primeiro"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/tv_topo"
         android:layout_marginTop="100px"
         />
@@ -40,9 +41,9 @@
         android:layout_height="wrap_content"
         android:hint="digite algo aqui"
         android:textSize="30sp"
-        android:id="@+id/tv_segundo"
+        android:id="@+id/et_segundo"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@id/tv_primeiro"
+        app:layout_constraintTop_toBottomOf="@id/et_primeiro"
         android:layout_marginTop="20dp"
         />
 
@@ -51,9 +52,9 @@
         android:layout_height="wrap_content"
         android:hint="Digite algo aqui"
         android:textSize="30sp"
-        android:id="@+id/tv_terceiro"
+        android:id="@+id/et_terceiro"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@id/tv_segundo"
+        app:layout_constraintTop_toBottomOf="@id/et_segundo"
         android:layout_marginTop="20dp"
         />
 
@@ -63,7 +64,8 @@
     android:text="Clica em mim"
     android:textSize="30sp"
     android:id="@+id/bt_01"
-    app:layout_constraintTop_toBottomOf="@id/tv_terceiro" android:layout_marginTop="20dp"
+    app:layout_constraintTop_toBottomOf="@id/et_terceiro" android:layout_marginTop="20dp"
+       android:onClick="botao"
        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
