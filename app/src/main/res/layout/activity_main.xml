@@ -9,17 +9,27 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Bem vindo ao sistema de controle de gastos de salário"
         android:id="@+id/tv_topo"
-        android:textSize="40sp"
+        android:textSize="30sp"
+        android:textColor="#9F109D"
          />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para poder calcular precisamos que preencha os dados abaixo"
+        android:id="@+id/tv_subtitulo"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_topo"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Clique no botão para ver a resposta!"
         android:id="@+id/tv_final"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@id/bt_01"
         android:layout_marginTop="20dp"
         android:textColor="#3592c4"
@@ -28,19 +38,19 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Digite algo aqui"
-        android:textSize="30sp"
+        android:hint="Digite seu nome"
+        android:textSize="25sp"
         android:id="@+id/et_primeiro"
         android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@id/tv_topo"
-        android:layout_marginTop="100px"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitulo"
+        android:layout_marginTop="50px"
         />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="digite algo aqui"
-        android:textSize="30sp"
+        android:hint="Digite seu salário"
+        android:textSize="25sp"
         android:id="@+id/et_segundo"
         android:inputType="number"
         app:layout_constraintTop_toBottomOf="@id/et_primeiro"
@@ -50,8 +60,8 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Digite algo aqui"
-        android:textSize="30sp"
+        android:hint="Digite os gastos do mês"
+        android:textSize="25sp"
         android:id="@+id/et_terceiro"
         android:inputType="number"
         app:layout_constraintTop_toBottomOf="@id/et_segundo"
@@ -59,13 +69,15 @@
         />
 
    <Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Clica em mim"
-    android:textSize="30sp"
-    android:id="@+id/bt_01"
-    app:layout_constraintTop_toBottomOf="@id/et_terceiro" android:layout_marginTop="20dp"
-       android:onClick="botao"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="27sp"
+        android:id="@+id/bt_01"
+        app:layout_constraintTop_toBottomOf="@id/et_terceiro" android:layout_marginTop="20dp"
+        android:onClick="botao"
+        android:background="#9F109D"
+
        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
