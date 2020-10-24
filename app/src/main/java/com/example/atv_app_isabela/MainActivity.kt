@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun botao(componente: View){
+    fun botao(compon0ente: View){
 
         val nome = et_primeiro.text.toString()
         val salario = et_segundo.text.toString().toDouble()
